@@ -46,16 +46,60 @@
     <section class="main-container">
       <form action="" class="form">
 
-        <img src="assets/Forgot password.png" alt="nav-logo" width="233" height="233" />
-        <h1>Forgot your password?</h1>
 
-        <text>enter the email so we can send your password reset link</text>
-        
-        
-        <input type="text" placeholder="Email" id="email" />
 
-        <button class="login-btn">Continue</button>
+
+      <style>
+        .container {
+            display: flex; /* Enables flexbox layout */
+            justify-content: space-between; /* Spaces the items apart */
+            align-items: center; /* Aligns items vertically */
+            gap: 20px; /* Adds spacing between text fields */
+        }
+        .input-field {
+            width: 45%; /* Adjust width as needed */
+        }
+        label {
+            display: block; /* Ensures label is above the input field */
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 100%; /* Matches the input field width to its container */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input:focus {
+            outline: none;
+            border-color: #007BFF; /* Highlight input field on focus */
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>Edit Profile Page</h1>
+    <div class="container">
+        <!-- First Name Field -->
+        <div class="input-field">
+            <label for="firstName">Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+        </div>
+        
+        <!-- Last Name Field -->
+        <div class="input-field">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+        </div>
+    </div>
+            <button class="login-btn">Continue</button>
       </form>
+</body>
+</html>
+
     </section>
+
+
+
   </body>
 </html>
