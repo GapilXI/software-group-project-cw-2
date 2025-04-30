@@ -49,49 +49,30 @@
 
 
 
-      <style>
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
-        }
-        .input-field {
-            width: 45%; 
-        }
-        label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        input {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        input:focus {
-            outline: none;
-            border-color: #007BFF;
-            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-        }
-    </style>
-</head>
 <body>
     <h1>Edit Profile Page</h1>
     <div class="container">
         <!-- First Name Field -->
         <div class="input-field">
-            <label for="firstName">Name:</label>
-            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your first name" required>
+
+            <label for="Username">Username</label>
+            <input type="text" id="name" name="name" placeholder="Enter your first name" required>
+            
+            <label for="email"> Email</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email" required>
         </div>
         
         <!-- Last Name Field -->
         <div class="input-field">
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+            <label for="surname"> Surname</label>
+            <input type="text" id="surname" name="surname" placeholder="Enter your surname" required>
         </div>
     </div>
+
+
+
             <button class="login-btn">Continue</button>
       </form>
 </body>
